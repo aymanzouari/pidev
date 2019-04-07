@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.FormationController">
+   <children>
+      <Label layoutX="48.0" layoutY="28.0" text="LISTE DES FORMATIONS">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableformation" layoutX="3.0" layoutY="80.0" prefHeight="441.0" prefWidth="743.0">
+        <columns>
+          <TableColumn fx:id="idtitre" prefWidth="100.0" text="Titre" />
+          <TableColumn fx:id="iddescription" prefWidth="321.0" text="Description" />
+            <TableColumn fx:id="idprix" prefWidth="64.0" text="Prix" />
+            <TableColumn fx:id="idnbpersonne" prefWidth="128.0" text="Nombre personne" />
+            <TableColumn fx:id="iddate" prefWidth="129.0" text="Dateformation" />
+        </columns>
+      </TableView>
+      <Button fx:id="idmodifier" layoutX="144.0" layoutY="531.0" mnemonicParsing="false" onAction="#modifierformation" prefHeight="25.0" prefWidth="121.0" text="Modifier" />
+      <Button fx:id="idsupprimer" layoutX="288.0" layoutY="531.0" mnemonicParsing="false" onAction="#supprimerformation" prefHeight="25.0" prefWidth="121.0" text="Supprimer" />
+   </children>
+</AnchorPane>

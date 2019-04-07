@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.BackendController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #808080;">
+         <children>
+            <Pane prefHeight="140.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="-25.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/ecosystem.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="PARAMETRE" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="idlogout" mnemonicParsing="false" onAction="#logout" text="Log out" />
+                <MenuItem fx:id="idlisteutilisateur" mnemonicParsing="false" onAction="#listeutilisateur" text="Liste des utilisateurs" />
+              </items>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+            <Pane prefHeight="20.0" prefWidth="250.0" />
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="CATEGORIE" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="idajoutcategorie" mnemonicParsing="false" onAction="#ajoutecategorie" text="Categorie" />
+              </items>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+            <Pane prefHeight="20.0" prefWidth="250.0" />
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="ARTICLE" textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#ajoutearticle" text="Article" />
+                <MenuItem fx:id="idlistearticle" mnemonicParsing="false" onAction="#listearticle" text="Liste Articles" />
+              </items>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+            <Pane prefHeight="20.0" prefWidth="250.0" />
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="FORMATION" textFill="WHITE">
+              <items>
+                  <MenuItem fx:id="idajoutformation" mnemonicParsing="false" onAction="#ajoutformation" text="Formation" />
+                <MenuItem fx:id="idlisteformation" mnemonicParsing="false" onAction="#listeformation" text="Liste Formation" />
+                <MenuItem fx:id="idlisteinscription" mnemonicParsing="false" onAction="#listeinscription" text="Liste Inscription" />
+              </items>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </VBox>
+      <Pane fx:id="pane1" layoutX="250.0" layoutY="-1.0" prefHeight="600.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>

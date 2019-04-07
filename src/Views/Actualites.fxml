@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ActualitesController">
+   <children>
+      <Label layoutX="454.0" layoutY="30.0" prefHeight="27.0" prefWidth="218.0" text="LISTES DES CATEGORIES:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="478.0" layoutY="69.0" prefHeight="567.0" prefWidth="210.0">
+         <content>
+            <ListView fx:id="listecategorie" onMousePressed="#afficherarticle" prefHeight="576.0" prefWidth="194.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="21.0" layoutY="69.0" prefHeight="440.0" prefWidth="428.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="434.0" prefWidth="422.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
